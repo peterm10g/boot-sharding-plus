@@ -22,4 +22,6 @@ import com.lsh.sharding.demo.entity.Order;
 public interface SpringPojoService {
 
     Order printData();
+
+    int addOrder(Order order);
 }

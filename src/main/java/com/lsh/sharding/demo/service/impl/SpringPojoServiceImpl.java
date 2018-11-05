@@ -36,4 +36,9 @@ public class SpringPojoServiceImpl implements SpringPojoService {
     public Order printData() {
         return orderMapper.selectById(1);
     }
+
+    @Override
+    public int addOrder(Order order) {
+        return orderMapper.insert(order);
+    }
 }
